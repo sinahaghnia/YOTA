@@ -1,0 +1,131 @@
+@media(max-width:451px){
+
+.header{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    height: 9vh;
+    background-color: #f5f6fa;
+}
+
+.header .right-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .right-header .header-fa-bars-icon{
+    font-size: 1.9rem;
+    color: gray;
+    padding: 0px 15px;
+}
+
+.header .right-header .search-box-header{
+    position: relative;
+}
+
+.header .right-header .search-box-header input{
+    width: 80vw;
+    height: 40px;
+    border: 1px solid rgb(237, 237, 237);
+    outline: none;
+    border-radius: 25px;
+    padding-right: 40px ;
+    font-family: iranSans;
+    font-size: 1.2rem;
+    color: rgb(165, 165, 165);
+}
+
+.header .right-header .search-box-header .footer-fa-search-icon{
+    position: absolute;
+    font-size: 1.4rem;
+    color: rgb(165, 165, 165);
+    right: 15px;
+    top: 33%;
+}
+
+.header .left-header{
+    display: flex;
+    align-items: center;
+}
+
+.header .left-header .support-and-setting-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-left: 10px;
+}
+
+.header .left-header .support-and-setting-icons .header-fa-support-icon{
+    font-size: 2.1rem;
+    color:gray ;
+}
+
+.header .left-header .support-and-setting-icons .header-fa-setting-icon{
+    font-size: 2.1rem;
+    color:gray ;
+}
+
+.side-bar-menu{
+        position: fixed;
+        width: 70vw;
+        height: 100vh;
+        background-color: white;
+        top: 0;
+        transform: translateX(100%);
+        z-index: 1000;
+        transition: transform .8s ease;
+    }
+
+    .side-bar-menu.active{
+        transform: translateX(0);
+        transition: transform .8s ease;
+    }
+
+    .side-bar-menu .side-bar-fa-x-icon{
+        font-size: 2rem;
+        margin: 20px 15px ;
+        color: rgb(87, 87, 87);
+    }
+
+    .side-bar-menu .menu-container{
+        margin: 20px 0px;
+    }
+
+    .side-bar-menu .menu-container > div{ /* select all divs in the menu */
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        border-bottom: 1px solid rgb(237, 237, 237);    
+    }
+
+    .side-bar-menu .menu-container > div span{
+        font-family: iranSans;
+        font-size: 1.5rem; 
+        color: rgb(65, 65, 65);
+    }
+
+    .side-bar-menu .menu-container > div span:hover{
+        color: #3498db;
+    }
+
+    .side-bar-menu .menu-container > div .side-bar-fa-angel-down-icon{
+        font-size: 1.5rem;
+        color: rgb(59, 59, 59);
+    }
+
+    .side-bar-menu .yota-logo-in-side-bar{
+        position: absolute;
+        bottom: 5px;
+        right: 10px;
+    }
+
+    .side-bar-menu .yota-logo-in-side-bar img{
+        width: 35px;
+    }
+
+}
+
+
+

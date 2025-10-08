@@ -1,0 +1,223 @@
+.popular-currencies{
+    margin: 20px 0px;
+}
+
+.popular-currencies .popular-titel{
+    margin: 0px 5px;
+}
+
+.popular-currencies .popular-titel h1{
+    color: rgb(77, 77, 77);
+    font-family: iranSans;
+    font-size: 1.3rem;
+    margin: 18px 10px;
+}
+
+.popular-currencies .popular-currencies-list{
+    direction: ltr;
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+    text-align: center;
+    gap: 10px;
+} 
+
+.popular-currencies .popular-currencies-list .bitcoin{
+    margin-left: 7px;
+}
+
+.popular-currencies .popular-currencies-list .xrp{
+    margin-right: 7px;
+}
+
+.popular-currencies .popular-currencies-list .bitcoin,.ethereum,.tether,.xrp{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    flex-shrink: 0;
+
+    width: 180px;
+    height: 190px;
+
+    background-color: #353b48;
+    border-radius: 10px;
+}
+
+.popular-currencies .popular-currencies-list img{   /* fix the all currencies logo  */
+    width: 20px;
+    margin: 5px;
+}
+
+.popular-currencies .popular-currencies-list .bitcoin .bitcoin-introduction,.ethereum-introduction,.tether-introduction,.xrp-introduction{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.popular-currencies .popular-currencies-list .bitcoin .bitcoin-introduction,.ethereum-introduction,.tether-introduction,.xrp-introduction span{
+        font-family: inter;
+        font-size: 1.3rem;
+        color: rgb(234, 234, 234);
+        letter-spacing: 1px;
+}
+
+.popular-currencies .popular-currencies-list .bitcoin .bitcoin-price-information,.ethereum-price-information,.tether-price-information,.xrp-price-information{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 0px 18px;
+}
+
+.popular-currencies .popular-currencies-list .bitcoin .bitcoin-price-information .live-price{
+    font-size: 1.5rem;
+    font-family: inter;
+    letter-spacing: 1px;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.popular-currencies .popular-currencies-list .bitcoin .bitcoin-price-information .profit-or-loss{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-family: inter;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    gap: 3px;
+}
+
+.popular-currencies .popular-currencies-list .ethereum .ethereum-price-information .live-price{
+    font-size: 1.5rem;
+    font-family: inter;
+    letter-spacing: 1px;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.popular-currencies .popular-currencies-list .ethereum .ethereum-price-information .profit-or-loss{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-family: inter;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    gap: 3px;
+}
+
+.popular-currencies .popular-currencies-list .tether .tether-price-information .live-price{
+    font-size: 1.5rem;
+    font-family: inter;
+    letter-spacing: 1px;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.popular-currencies .popular-currencies-list .tether .tether-price-information .profit-or-loss{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-family: inter;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    gap: 3px;
+}
+
+.popular-currencies .popular-currencies-list .xrp .xrp-price-information .live-price{
+    font-size: 1.5rem;
+    font-family: inter;
+    letter-spacing: 1px;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.popular-currencies .popular-currencies-list .xrp .xrp-price-information .profit-or-loss{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-family: inter;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    gap: 3px;
+}
+
+.popular-currencies .popular-currencies-list .bitcoin .bitcoin-timeline-chart , .ethereum-timeline-chart , .xrp-timeline-chart , .tether-timeline-chart{
+    position: absolute;
+    width: 98%;
+    height: 50%;
+    bottom: 5px;
+}
+
+.all-currencies{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+.all-currencies .all-currencies-titel{
+     margin: 10px 6%;
+}
+
+.all-currencies .all-currencies-titel h1{
+     color: rgb(77, 77, 77);
+    font-family: iranSans;
+    font-size: 1.3rem;
+}
+
+.all-currencies .all-currencies-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.all-currencies .all-currencies-list .header-list{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: 1fr;
+    text-align: center;
+    width: 90vw;
+    background-color: #353b48;
+    border-radius: 2px;
+}
+
+.all-currencies .all-currencies-list .header-list span{
+    font-family: inter;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 10px 8px;
+    color: azure;
+}
+
+.all-currencies .all-currencies-list .body-list > div{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: 1fr;
+    text-align: center;
+
+    width: 90vw;
+    font-size: 1.2rem;
+    margin-top: 5px;
+
+    background-color: #ffffff;
+    color: azure;
+
+    border: 1.5px solid rgb(235, 235, 235);
+    border-radius: 2px;
+}
+
+.all-currencies .all-currencies-list .body-list > div img{
+    width: 60px;
+    padding: 10px 0px;
+}
+
+.all-currencies .all-currencies-list .body-list > div span{
+    color: rgb(66, 66, 66);
+    padding: 9px 0px;
+}

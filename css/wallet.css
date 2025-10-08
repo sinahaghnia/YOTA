@@ -1,0 +1,249 @@
+@media(max-width:451px){
+
+    .wallet-page{
+        padding: 30px 0px ;
+    }
+
+   .wallet-page .user-wallet{
+    display: flex;
+    justify-content: center;
+    
+   }
+
+    .wallet-page .user-wallet .user-wallet-container{
+        position: relative;
+
+        background: #232526;  
+        background: -webkit-linear-gradient(to right, #414345, #232526);  
+        background: linear-gradient(to right, #414345, #232526); 
+
+        width: 90vw;
+        height: 180px;
+        border-radius: 7px;
+        box-shadow: 0px 0px 10px 0px rgba(138, 138, 138, 0.779);
+    }
+
+
+    .wallet-page .user-wallet .user-wallet-container .up-side-of-user-wallet .switch-currency-and-hiddenility{
+        display: flex;
+        justify-content: space-between;
+        margin: 15px;
+    }
+
+    .wallet-page .user-wallet .user-wallet-container .up-side-of-user-wallet .switch-currency-and-hiddenility .show-or-hide-user-balance{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .wallet-page .user-wallet .user-wallet-container .up-side-of-user-wallet .switch-currency-and-hiddenility .show-or-hide-user-balance span{
+        font-family: iranSans;
+        font-size: 1.1rem;
+        color: rgb(209, 209, 209);
+    }
+
+    .wallet-page .user-wallet .user-wallet-container .up-side-of-user-wallet .switch-currency-and-hiddenility .show-or-hide-user-balance .eye-or-eyeslash{
+        font-size: 1.3rem;
+        color: rgb(209, 209, 209);
+    }
+
+    .wallet-page .user-wallet .user-wallet-container .up-side-of-user-wallet .switch-currency-and-hiddenility .switch-button-for-toman-or-tether{
+        display: flex;
+        align-items: center;
+        font-family: iranSans;
+        border-radius: 5px;
+        gap: 5px;
+        color: rgb(150, 150, 150);
+    }
+
+    .wallet-page .user-wallet .user-wallet-container .up-side-of-user-wallet .switch-currency-and-hiddenility .switch-button-for-toman-or-tether .switch-button{
+        position: relative;
+        appearance: none;
+        width: 40px;
+        height: 20px;
+        background-color: rgb(224, 224, 224);
+        border-radius: 20px;
+    }
+
+    .wallet-page .user-wallet .user-wallet-container .up-side-of-user-wallet .switch-currency-and-hiddenility .switch-button-for-toman-or-tether .switch-button::before{
+        content: "";
+        position: absolute;
+        text-align: center;
+        top: 10%;
+        right: 7%;
+        display: block;
+        width: 15px;
+        height: 15px;
+        border-radius:50%;
+        background-color: rgb(0, 0, 0);
+        border: 1px solid black;
+        transition: all .7s ease;
+    }
+
+    .wallet-page .user-wallet .user-wallet-container .up-side-of-user-wallet .switch-currency-and-hiddenility .switch-button-for-toman-or-tether .switch-button.active::before{
+        content: "";
+        text-align: center;
+        right: 54%;
+        transition: all .7s ease;
+    }
+
+    .wallet-page .user-wallet .user-wallet-container .up-side-of-user-wallet .switch-currency-and-hiddenility .switch-button-for-toman-or-tether .toman-option{
+        font-size: 1.1rem;
+    }
+
+    .wallet-page .user-wallet .user-wallet-container .up-side-of-user-wallet .switch-currency-and-hiddenility .switch-button-for-toman-or-tether .tether-option{
+        font-size: 1.1rem;
+    }
+
+    .wallet-page .user-wallet .user-wallet-container .up-side-of-user-wallet .switch-currency-and-hiddenility .switch-button-for-toman-or-tether .toman-option.active{
+        color: rgb(225, 225, 225);
+    }
+
+    .wallet-page .user-wallet .user-wallet-container .up-side-of-user-wallet .switch-currency-and-hiddenility .switch-button-for-toman-or-tether .tether-option.active{
+        color: rgb(225, 225, 225);
+    }
+
+    .wallet-page .user-wallet .user-wallet-container .up-side-of-user-wallet .user-balance-amount{
+        margin: 15px;
+    }
+
+    .wallet-page .user-wallet .user-wallet-container .up-side-of-user-wallet .user-balance-amount span{
+        font-size: 1.7rem;
+        font-weight: bold;
+        color: rgb(209, 209, 209);
+    }
+
+    .wallet-page .user-wallet .user-wallet-container .deposit-and-widthdraw-cards{
+        display: flex;
+        grid-template-columns: repeat(4 , 1fr);
+        color: rgb(225, 225, 225);
+        margin: 10% 4%;
+        gap: 7%;
+    }
+
+    .wallet-page .user-wallet .user-wallet-container .deposit-and-widthdraw-cards > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 60px;
+        padding: 15px 0px 5px 0px;
+        border-radius: 5px;
+        gap: 5px;
+    }
+
+    .wallet-page .user-wallet .user-wallet-container .deposit-and-widthdraw-cards > div:hover{
+        box-shadow: 0px 0px 40px 0px rgba(17, 17, 17, 0.377);
+        border: 1px solid rgba(68, 68, 68, 0.986); 
+        transition: all .8s ease;
+    }
+
+    .wallet-page .user-wallet .user-wallet-container .deposit-and-widthdraw-cards > div span{
+        font-family: iranSans;
+        font-size: 1.2rem;
+
+    }
+
+    .wallet-page .user-wallet .user-wallet-container .deposit-and-widthdraw-cards > div .card-icons{
+        font-size: 1.2rem;
+
+    }
+
+    .buying-and-selling-currencies{
+        margin-top: 50px ;
+        background-color: white;
+    }
+
+    .buying-and-selling-currencies .buy-list-search-currencies{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .buying-and-selling-currencies .buy-list-search-currencies .search-box{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .buying-and-selling-currencies .buy-list-search-currencies .search-box input{
+        font-family: iranSans;
+        font-size: 1.2rem;
+        width: 95vw;
+        height:35px ;
+        border-radius: 20px;
+        border: 1px solid #d3d3d3;
+        padding-right: 11%;
+        color: rgb(215, 215, 215);
+    }
+
+    .buying-and-selling-currencies .buy-list-search-currencies .search-box .search-icon-in-input{
+        position: absolute;
+        right: 7%;
+        top: 33%;
+        font-size: 1.3rem;
+        color: rgb(165, 165, 165);
+    }
+
+    .buying-and-selling-currencies .buy-list-search-currencies .buy-list-titel{
+        display: flex;
+        gap: 15%;
+        color: #848484;
+        margin: 30px 7% 0px 0px;
+    }
+
+    .buying-and-selling-currencies .buy-list-search-currencies .buy-list-titel span{
+        font-family: inter;
+        font-size: .95rem;
+        color: rgb(69, 69, 69);
+    }
+
+    .buying-and-selling-currencies .buy-list-search-currencies .buy-list-titel .fa-Arrow-Down-Up-Across-Line{
+        font-size: .95rem;
+    }
+
+    .buying-and-selling-currencies .currencies-list-for-buy-or-sell{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0px;
+        gap: 10px;
+    }
+
+    .buying-and-selling-currencies .currencies-list-for-buy-or-sell .crypto-for-buy-or-sell{
+        display: flex ;
+        align-items: center;
+        width: 100vw;
+        height: 80px;
+        padding: 15px 3% 15px 7%;
+
+    }
+
+    .buying-and-selling-currencies .currencies-list-for-buy-or-sell .crypto-for-buy-or-sell:nth-child(odd){
+        background-color: #f5f6fa;
+    }
+
+    .buying-and-selling-currencies .currencies-list-for-buy-or-sell .crypto-for-buy-or-sell .currency-logo-and-name img{
+        width: 70px;
+    }
+
+    .buying-and-selling-currencies .currencies-list-for-buy-or-sell .crypto-for-buy-or-sell .currency-price-data{
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr);
+        gap: 5%;
+        font-size: 1.2rem;
+        margin: 0px 7%;
+        color: rgb(63, 63, 63);
+    }
+
+    .buying-and-selling-currencies .currencies-list-for-buy-or-sell .crypto-for-buy-or-sell .currency-price-data > div{
+        font-family: inter;
+        font-size: 1.2rem;
+        direction: ltr;
+        width: 20vw;
+        text-align: center;
+    }
+
+}
