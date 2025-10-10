@@ -196,9 +196,9 @@
 }
 
 .all-currencies .all-currencies-list .body-list > div{
-    display: grid;
-    grid-template-columns: repeat(3 , 1fr);
-    grid-template-rows: 1fr;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     text-align: center;
 
     width: 90vw;
@@ -212,6 +212,13 @@
     border-radius: 2px;
 }
 
+.all-currencies .all-currencies-list .body-list > div:hover{
+    transform: scale(1.05);
+    transition: transform .3s ease;
+    background-color: #fefeff;
+    border: 2px solid white;
+}
+
 .all-currencies .all-currencies-list .body-list > div img{
     width: 60px;
     padding: 10px 0px;
@@ -219,5 +226,5 @@
 
 .all-currencies .all-currencies-list .body-list > div span{
     color: rgb(66, 66, 66);
-    padding: 9px 0px;
+    margin-left: 10px ;
 }

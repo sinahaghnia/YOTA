@@ -5,9 +5,16 @@ import { useNavigate } from 'react-router-dom';
 
 function Header(){
 
-const [isItActive , setActivity] = useState(false);
+    const [isItActive , setActivity] = useState(false);
 
-const navigate = useNavigate();
+    const navigate = useNavigate();
+
+    function inputHandeler(){
+
+        sessionStorage.setItem('openSearchInput' , 'true');
+        navigate('/search');
+    }
+
 
      return(
         <>
@@ -17,7 +24,7 @@ const navigate = useNavigate();
 
                 <FontAwesomeIcon icon={faBars} className='header-fa-bars-icon' onClick={()=> setActivity(true)}/>
 
-                <div className="search-box-header" onClick={()=> navigate('/search')}>
+                <div className="search-box-header" onClick={()=> inputHandeler()}>
                     <input type="text" placeholder='جست و جو' />
                     <FontAwesomeIcon icon={faSearch} className='footer-fa-search-icon'/>
                 </div>

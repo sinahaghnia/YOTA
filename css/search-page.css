@@ -1,13 +1,21 @@
 @media(max-width:451px){
 
     .search-page{
-
-    }
-
-    .search-page .search-box{
         display: flex;
         flex-direction: column;
         background-color: white;
+    }
+
+    .search-page .search-box{
+        position: fixed;
+        top: 0; 
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-bottom: 1px solid rgb(223, 223, 223);
+        box-shadow: 0px 0px 4px 0px rgb(225, 225, 225);
     }
 
     .search-page .search-box .input-and-icon{
@@ -59,6 +67,45 @@
     .search-page .search-box .suggestion-for-search > div:hover{
         background-color: #34495e;
         color: rgb(255, 255, 255);
+    }
+
+    .search-page .currencies-list-for-buy-or-sell{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 110px;
+        gap: 10px;
+    }
+
+    .search-page .currencies-list-for-buy-or-sell .crypto-for-buy-or-sell{
+        display: flex ;
+        align-items: center;
+        width: 100vw;
+        height: 80px;
+        padding: 15px 3% 15px 7%;
+
+    }
+
+    .search-page .currencies-list-for-buy-or-sell .crypto-for-buy-or-sell .currency-logo-and-name img{
+        width: 70px;
+    }
+
+    .search-page .currencies-list-for-buy-or-sell .crypto-for-buy-or-sell .currency-price-data{
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr);
+        gap: 5%;
+        font-size: 1.2rem;
+        margin: 0px 7%;
+        color: rgb(63, 63, 63);
+    }
+
+    .search-page .currencies-list-for-buy-or-sell .crypto-for-buy-or-sell .currency-price-data > div{
+        font-family: inter;
+        font-size: 1.2rem;
+        direction: ltr;
+        width: 20vw;
+        text-align: center;
     }
 
 }

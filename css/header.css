@@ -97,22 +97,21 @@
         display: flex;
         justify-content: space-between;
         padding: 20px;
-        border-bottom: 1px solid rgb(237, 237, 237);    
+        border-bottom: 1px solid rgb(237, 237, 237); 
+        color: rgb(59, 59, 59);   
     }
 
     .side-bar-menu .menu-container > div span{
         font-family: iranSans;
         font-size: 1.5rem; 
-        color: rgb(65, 65, 65);
-    }
-
-    .side-bar-menu .menu-container > div span:hover{
-        color: #3498db;
     }
 
     .side-bar-menu .menu-container > div .side-bar-fa-angel-down-icon{
-        font-size: 1.5rem;
-        color: rgb(59, 59, 59);
+        font-size: 1.5rem; 
+    }
+
+    .side-bar-menu .menu-container > div:hover{
+        background-color: #f5f6fa;
     }
 
     .side-bar-menu .yota-logo-in-side-bar{

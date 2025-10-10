@@ -1,0 +1,35 @@
+@media(max-width:451px){
+    .error{
+        position: relative;
+
+        background: #485563;  
+        background: -webkit-linear-gradient(to right, #29323c, #485563); 
+        background: linear-gradient(to right, #29323c, #485563); 
+
+        height: 100vh;
+        text-align: center;
+        color: rgb(214, 214, 214);
+    }
+
+    .error .back-buttom{
+        position: absolute;
+        font-size: 1.7rem;
+        left: 20px;
+        top: 15px;
+    }
+
+    .error .error-message{
+        font-family: inter;
+        margin: 25% 0px 10px;
+    }
+
+    .error .error-message h1{
+        font-size: 4rem;
+        margin: 10px 0px;
+        
+    }
+
+    .error .error-message span{
+        font-size: 1.5rem;
+    }
+}

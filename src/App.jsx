@@ -5,7 +5,9 @@ import Wallet from '../chenger-components/wallet';
 import DataProvider from '../core components/context';
 import MainLayout from '../core components/main-layout';
 import FullScreenLayout from '../core components/full-screen-layout';
-import Search from '../full-screen-components/search';
+import SearchPage from '../full-screen-components/search-page';
+import CoinInformation from '../full-screen-components/coin-information';
+import ErrorPage from '../error-page/error-page';
 import '../css/main.css';
 import './App.css';
 import '../css/prices.css'
@@ -13,7 +15,11 @@ import '../css/header.css';
 import '../css/footer.css';
 import '../css/home.css';
 import '../css/Wallet.css';
-import '../css/search-page.css'
+import '../css/search-page.css';
+import '../css/coin-information.css';
+import '../error-page/error.css';
+
+
 
 
 function App() {
@@ -22,14 +28,16 @@ function App() {
 
   <div className="app">
 
-      <DataProvider>
+    <DataProvider>
 
       <Router>
         <Routes>
           <Route path='/' element={<MainLayout> <Home/> </MainLayout>} />
           <Route path='/price' element={<MainLayout> <Prices/> </MainLayout>} />
           <Route path='/wallet' element={<MainLayout> <Wallet/> </MainLayout>} />
-          <Route path='/search' element={<FullScreenLayout> <Search/> </FullScreenLayout>} />
+          <Route path='/search' element={<FullScreenLayout> <SearchPage/> </FullScreenLayout>} />
+          <Route path='/coin-information' element={<FullScreenLayout> <CoinInformation/> </FullScreenLayout>} />
+          <Route path='*' element={<FullScreenLayout> <ErrorPage/> </FullScreenLayout>} />
         </Routes>
       </Router>
     
@@ -42,20 +50,3 @@ function App() {
 }
 
 export default App
-
-{/* <Router >
-     <LayoutPortal>
-        <header> <Header/> </header>
-      </LayoutPortal> 
-
-    <div className="app"> 
-      <main>
-        <Routes>
-          <Route path='/' element={<Home/>} />
-          <Route path='/price' element={<Prices/>}/>
-          <Route path='/wallet' element={<Wallet/>}/>
-        </Routes>
-      </main>
-    </div>
-      <footer> <Footer/> </footer>
-    </Router> */}
