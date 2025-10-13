@@ -3,23 +3,29 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft, faArrowDown, faArrowTrendDown, faArrowTrendUp, faPlus, faUpDown } from "@fortawesome/free-solid-svg-icons";
 
 
+export function getImages(fileName){
+
+        return`${import.meta.env.BASE_URL}images/${fileName}`
+    }
+
 function Home(){
 
+
     const logos = [
-        "/images/bitcoin-logo.svg",
-        "/images/ethereum-logo.svg",
-        "/images/xrp-logo.svg",
-        "/images/tether-logo.svg",
-        "/images/solana-logo.svg",
-        "/images/shiba-inu-logo.svg",
+        getImages('bitcoin-logo.svg'),
+        getImages('ethereum-logo.svg'),
+        getImages('xrp-logo.svg'),
+        getImages('tether-logo.svg'),
+        getImages('solana-logo.svg'),
+        getImages('shiba-inu-logo.svg')
     ]; 
 
     const [current , setCurrent] = useState(0);
 
     const slides = [
-        '/images/poster-one.png',
-        '/images/poster-two.png',
-        '/images/poster-three.png'
+        getImages('poster-one.png'),
+        getImages('poster-two.png'),
+        getImages('poster-three.png')
     ];
 
     useEffect(()=>{
@@ -73,28 +79,6 @@ function Home(){
                 </div>   
 
             </section>
-
-            {/* <section className="multi-part-currencies-informatios">
-
-                <div className="the-header-titels">
-                    <div className="the-hotest-titel"> <span>داغ ترین ها</span> </div>
-                    <div className="the-favorite-titel"> <span> مورد علاقه ها </span> </div>
-                    <div className="the-newest-titel"> <span>جدید ترین ها</span> </div>
-                </div>
-
-                <div className="the-hottest-coins-part">
-
-                </div>
-
-                <div className="the-favorite-coins-part">
-
-                </div>
-
-                <div className="the-newest-coins-part">
-
-                </div>
-
-            </section> */}
 
             
         </div>

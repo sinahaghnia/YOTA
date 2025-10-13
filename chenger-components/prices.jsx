@@ -4,6 +4,7 @@ import { ResponsiveContainer,LineChart,Line,YAxis } from "recharts"
 import axios from "axios";
 import { useContext, useEffect, useState } from "react";
 import { ContextData } from "../core components/context";
+import { getImages } from "./home";
 
 
 function Prices(){
@@ -25,7 +26,7 @@ function Prices(){
                 <div className="bitcoin">
 
                      <div className="bitcoin-introduction">
-                        <img src="/images/bitcoin-logo.svg" alt="" /> <span> bitcoin </span> 
+                        <img src={getImages('bitcoin-logo.svg')} alt="" /> <span> bitcoin </span> 
                     </div>
 
                     <div className="bitcoin-price-information" >
@@ -47,7 +48,7 @@ function Prices(){
                 <div className="ethereum">
 
                      <div className="ethereum-introduction">
-                        <img src="/images/ethereum-logo.svg" alt="" style={{height:'23px' , width:'23px', backgroundColor:'white',borderRadius:'50%',padding:'2px 0px'}} /> <span> ethereum </span> 
+                        <img src={getImages('ethereum-logo.svg')} alt="" style={{height:'23px' , width:'23px', backgroundColor:'white',borderRadius:'50%',padding:'2px 0px'}} /> <span> ethereum </span> 
                     </div>
 
                     <div className="ethereum-price-information" >
@@ -69,7 +70,7 @@ function Prices(){
                 <div className="tether">
 
                      <div className="tether-introduction">
-                        <img src="/images/solana-logo.svg" alt="" /> <span> solana </span> 
+                        <img src={getImages('solana-logo.svg')} alt="" /> <span> solana </span> 
                     </div>
 
                     <div className="tether-price-information" >
@@ -91,7 +92,7 @@ function Prices(){
                 <div className="xrp">
 
                      <div className="xrp-introduction">
-                        <img src="/images/xrp-logo.svg" alt="xrp" style={{height:'23px' , width:'23px', backgroundColor:'white',borderRadius:'50%',padding:'2px'}}/> <span> xrp </span> 
+                        <img src={getImages('xrp-logo.svg')} alt="xrp" style={{height:'23px' , width:'23px', backgroundColor:'white',borderRadius:'50%',padding:'2px'}}/> <span> xrp </span> 
                     </div>
 
                     <div className="xrp-price-information" >
@@ -131,61 +132,61 @@ function Prices(){
                 <div className="body-list">
 
                     <div className="row-one">
-                        <div> <img src="/images/bitcoin-with-text.svg"/> </div>
+                        <div> <img src={getImages('bitcoin-with-text.svg')} alt="" /> </div>
                         <span > {`$${allDataCoins.bitcoin?.usd}`} </span> 
                         <span className="body-list-market-cap"> $2.3T </span>
                     </div>
 
                     <div className="row-two">
-                        <div> <img src="/images/ethereum-with-text.svg"/> </div> 
+                        <div> <img src={getImages('ethereum-with-text.svg')} alt="" /> </div> 
                         <span> {`$${allDataCoins.ethereum?.usd}`} </span> 
                         <span className="body-list-market-cap"> $517B </span> 
                     </div>
 
                     <div className="row-three">
-                        <div> <img src="/images/xrp-with-text.svg"/> </div>
+                        <div> <img src={getImages('xrp-with-text.svg')} alt="" /> </div>
                         <span> {`$${allDataCoins.ripple?.usd}`} </span> 
                         <span className="body-list-market-cap"> $175B </span>
                     </div>
 
                     <div className="row-four">
-                        <div> <img src="/images/tether2.png"/> </div> 
+                        <div> <img src={getImages('tether2.png')} alt="" /> </div> 
                         <span> {`$${allDataCoins.tether?.usd}`} </span> 
                         <span className="body-list-market-cap"> $174B </span>
                     </div>
 
                     <div className="row-five">
-                        <div> <img src="/images/solana-logo-with-text.svg" style={{width:'65px'}}/> </div>
+                        <div> <img src={getImages('solana-logo-with-text.svg')} alt="" /> </div>
                         <span> {`$${allDataCoins.solana?.usd}`} </span> 
                         <span className="body-list-market-cap"> $117B </span> 
                     </div>
 
                     <div className="row-six">
-                        <div> <img src="/images/tron-logo.svg"/> </div> 
+                        <div> <img src={getImages('tron-logo.svg')} alt="" /> </div> 
                         <span> {`$${allDataCoins.tron?.usd}`} </span> 
                         <span className="body-list-market-cap"> $31B </span> 
                     </div>
 
                     <div className="row-seven">
-                        <div> <img src="/images/avalanch-logo.svg" style={{width:'65px'}}/></div>
+                        <div> <img src={getImages('avalanch-logo.svg')} alt="" /> </div>
                         <span> {`$${allDataCoins['avalanche-2']?.usd}`} </span> 
                         <span className="body-list-market-cap"> $13B </span> 
                     </div>
 
                     <div className="row-eight"> 
-                        <div> <img src="/images/litecoin-logo.svg"/> </div>
+                        <div> <img src={getImages('litecoin-logo.svg')} alt="" /> </div>
                          <span> {`$${allDataCoins.litecoin?.usd}`} </span> 
                         <span className="body-list-market-cap"> $8.4B </span> 
                     </div>
 
                     <div className="row-nine"> 
-                        <div> <img src="/images/shiba-inu-logo-with-text.svg" style={{width:'65px'}}/>  </div> 
+                        <div> <img src={getImages('shiba-inu-logo-with-text.svg')} alt="" /> </div> 
                         <span> {`$${allDataCoins['shiba-inu']?.usd}`} </span> 
                         <span className="body-list-market-cap"> $7B </span> 
                     </div>
 
                     <div className="row-ten"> 
-                        <div> <img src="/images/ton-coin-logo.svg" style={{width:'50px'}}/> </div>
+                        <div> <img src={getImages('ton-coin-logo.svg')} alt="" /> </div>
                         <span> {`$${allDataCoins['the-open-network']?.usd}`} </span> 
                         <span className="body-list-market-cap"> $6.9B </span> 
                     </div>

@@ -2,6 +2,7 @@ import { faAngleLeft, faArrowDown, faArrowDownUpAcrossLine, faArrowDownUpLock, f
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useContext, useState } from "react";
 import { ContextData } from "../core components/context";
+import { getImages } from "./home";
 
 
 function Wallet(){
@@ -11,55 +12,55 @@ function Wallet(){
 
     const allCurrenciesData = [
         {
-            imageSrc:"/images/bitcoin-with-text.svg",
+            imageSrc: getImages('bitcoin-with-text.svg'),
             name: 'bitcoin',
             marketCap: '2.2T'
         },
 
         {
-            imageSrc:"/images/ethereum-with-text.svg",
+            imageSrc:getImages('ethereum-with-text.svg'),
             name: 'ethereum',
             marketCap: '517B'
         },
 
         {
-            imageSrc:"/images/solana-logo-with-text.svg",
+            imageSrc:getImages('solana-logo-with-text.svg'),
             name: 'solana',
             marketCap: '175B'
         },
 
         {
-            imageSrc:"/images/xrp-with-text.svg",
+            imageSrc:getImages('xrp-with-text.svg'),
             name: 'ripple',
             marketCap: '174B'
         },
         {
-            imageSrc:"/images/tether2.png",
+            imageSrc:getImages('tether2.png'),
             name: 'tether',
             marketCap: '117B'
         },
         {
-            imageSrc:"/images/tron-logo.svg",
+            imageSrc:getImages('tron-logo.svg'),
             name: 'tron',
             marketCap: '31.78B'
         },
         {
-            imageSrc:"/images/avalanch-logo.svg",
+            imageSrc:getImages('avalanch-logo.svg'),
             name: 'avalanche-2',
             marketCap: '13.34B'
         },
         {
-            imageSrc:"/images/litecoin-logo.svg",
+            imageSrc:getImages('litecoin-logo.svg'),
             name: 'litecoin',
             marketCap: '8.4B'
         },
         {
-            imageSrc:"/images/shiba-inu-logo-with-text.svg",
+            imageSrc:getImages('shiba-inu-logo-with-text.svg'),
             name: 'shiba-inu',
             marketCap: '7.85B'
         },
         {
-            imageSrc:"/images/ton-coin-logo.svg",
+            imageSrc:getImages('ton-coin-logo.svg'),
             name: 'the-open-network',
             marketCap: '6.96B'
         }   
