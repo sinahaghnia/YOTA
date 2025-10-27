@@ -8,6 +8,7 @@ import FullScreenLayout from '../core components/full-screen-layout';
 import SearchPage from '../full-screen-components/search-page';
 import CoinInformation from '../full-screen-components/coin-information';
 import ErrorPage from '../error-page/error-page';
+import LoanCalculation from '../chenger-components/loan-calculation';
 import '../css/main.css';
 import './App.css';
 import '../css/prices.css'
@@ -18,9 +19,9 @@ import '../css/Wallet.css';
 import '../css/search-page.css';
 import '../css/coin-information.css';
 import '../error-page/error.css';
-
-
-
+import '../css/loan-calculation.css';
+import '../css/profile.css';
+import Profile from '../chenger-components/profile';
 
 function App() {
 
@@ -34,7 +35,9 @@ function App() {
         <Routes>
           <Route path='/' element={<MainLayout> <Home/> </MainLayout>} />
           <Route path='/price' element={<MainLayout> <Prices/> </MainLayout>} />
+          <Route path='loan-calculation' element={ <MainLayout> <LoanCalculation/> </MainLayout> }/>
           <Route path='/wallet' element={<MainLayout> <Wallet/> </MainLayout>} />
+          <Route path='/profile' element={<FullScreenLayout> <Profile/> </FullScreenLayout>}/>
           <Route path='/search' element={<FullScreenLayout> <SearchPage/> </FullScreenLayout>} />
           <Route path='/coin-information' element={<FullScreenLayout> <CoinInformation/> </FullScreenLayout>} />
           <Route path='*' element={<FullScreenLayout> <ErrorPage/> </FullScreenLayout>} />

@@ -16,7 +16,6 @@ function DataProvider({children}){
 
         axios.get('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,solana,ripple,tether,tron,avalanche-2,litecoin,shiba-inu,the-open-network&vs_currencies=usd&include_24hr_change=true').then((res)=>{
             setAllDataCoins(res.data)
-            console.log(res.data)
         }).catch((error)=> console.log(`the api error :${error}`))
 
     },[])

@@ -1,0 +1,416 @@
+@media(max-width: 451px){
+
+
+                /* start to styling the loan calculation header section  */
+
+
+.loan-calculation .loan-calculation-header{
+    background: #5C258D;
+    background: -webkit-linear-gradient(to right, #4389a2, #5C258D); 
+    background: linear-gradient(to right, #4389A2, #5c258d);
+
+    padding: 30px 0px 50px 0px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.loan-calculation .loan-calculation-header .loan-header-image{
+    display: flex;
+    justify-content: center;
+}
+
+.loan-calculation .loan-calculation-header .loan-header-image img{
+    width: 250px;
+}
+
+.loan-calculation .loan-calculation-header .loan-header-titel{
+    font-family: iranSans;
+    text-align: center;
+}
+
+.loan-calculation .loan-calculation-header .loan-header-titel h1{
+    margin: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.loan-calculation .loan-calculation-header .loan-header-titel span{
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    opacity: .9;
+}
+
+                /* start to styling the loan calculation form section  */
+
+.loan-calculation .loan-calculation-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0px;
+}
+
+.loan-calculation .loan-calculation-form .select-currency{
+    display: flex;
+    justify-content: space-between;
+    font-family: iranSans;
+    width: 94vw;
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 20px;
+    background-color: white;
+
+    padding: 7px 13px;
+}
+
+.loan-calculation .loan-calculation-form .select-currency:hover{
+    background-color: rgb(231, 231, 231);
+}
+
+.loan-calculation .loan-calculation-form .select-currency > span{
+    font-size: 1.2rem;
+    color: rgb(87, 86, 86);
+}
+
+.loan-calculation .loan-calculation-form .select-currency .choose{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: rgb(158, 158, 158);
+    gap: 3px;
+}
+
+.loan-calculation .loan-calculation-form .inter-amount-of-currencies{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 3px;
+}
+
+.loan-calculation .loan-calculation-form .inter-amount-of-currencies .user-value-input div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 20px;
+
+    width: 83vw;
+    height: 34px;
+
+    background-color: white;
+    color: rgb(87, 86, 86);
+
+    font-family: iranSans , inter;
+    font-size: 1.1rem;
+}
+
+.loan-calculation .loan-calculation-form .inter-amount-of-currencies .user-value-input div .faXmark{
+    width: 10px;
+    height: 10px;
+    border: 1px solid rgb(87, 86, 86);
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.loan-calculation .loan-calculation-form .inter-amount-of-currencies .currencies-logo{
+    display: flex;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 50%;
+
+    font-family: iranSans;
+    background-color: white;
+
+}
+
+.loan-calculation .loan-calculation-form .inter-amount-of-currencies .currencies-logo img{
+    width: 25px;
+    padding: 3px;
+}
+
+.loan-calculation .loan-calculation-form .form-error{
+    display: flex;
+    justify-content: start;
+    width: 100vw;
+}
+
+.loan-calculation .loan-calculation-form .form-error span{
+    font-family: iranSans;
+    font-size: .9rem;
+    color: red;
+    margin: 2px 30px 0px 0px;
+}
+
+.loan-calculation .loan-calculation-form .inter-the-month{
+    display: flex;
+    justify-content: space-between;
+    font-family: iranSans;
+    width: 94vw;
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 20px;
+    background-color: white;
+
+    padding: 7px 13px;
+    margin-top: 10px;
+}
+
+.loan-calculation .loan-calculation-form .inter-the-month span{
+    font-size: 1.2rem;
+    color: rgb(87, 86, 86);
+}
+
+.loan-calculation .loan-calculation-form .inter-the-month .choose{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: rgb(158, 158, 158);
+    gap: 3px;
+}
+
+.loan-calculation .loan-calculation-form .inter-the-month .choose span{
+    color: rgb(158, 158, 158);
+}
+
+.loan-calculation .loan-calculation-form .button-for-loan-calculation{
+    background: #2c3e50;
+    background: -webkit-linear-gradient(to right, #2c3e50, #485563);  
+    background: linear-gradient(to right, #2c3e50, #485563); 
+    color: rgb(239, 239, 239);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 40px;
+    width: 94vw;
+
+    border: none;
+    border-radius: 20px;
+
+    font-family: iranSans;
+    font-size: 1.5rem;
+    margin-top: 50px ;
+}
+
+            /* start to styling the loan calculation result section  */
+
+.loan-calculation .loan-calculation-result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.loan-calculation .loan-calculation-result .loan-calculation-result-container{
+    width: 96vw;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid rgba(196, 196, 196, 0.416);
+}
+
+.loan-calculation .loan-calculation-result-container .loan-amount{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 30px;
+
+    font-family: iranSans;
+}
+
+.loan-calculation .loan-calculation-result-container .loan-amount img{
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.loan-calculation .loan-calculation-result-container .loan-amount div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+}
+
+.loan-calculation .loan-calculation-result-container .loan-amount div .amount{
+    font-size: 1.8rem;
+}
+
+
+.loan-calculation .loan-calculation-result-container .loan-amount div .description{
+    font-size: 1rem;
+    color: rgb(103, 103, 103);
+}
+
+
+.loan-calculation .loan-calculation-result .loan-calculation-result-container .additional-loan-information > div{
+    display: flex;
+    flex-direction: column;
+
+    font-family: iranSans;
+    margin: 15px;
+    gap: 2px;
+
+    border-bottom: 1px dashed rgba(196, 196, 196, 0.416);
+}   
+
+.loan-calculation .loan-calculation-result .loan-calculation-result-container .additional-loan-information > div .amount{
+    font-size: 1.5rem;
+    margin-right: 5px;
+}    
+
+.loan-calculation .loan-calculation-result .loan-calculation-result-container .additional-loan-information > div .description{
+    font-size: 1rem;
+    color: rgb(103, 103, 103);
+}    
+
+.loan-calculation .loan-calculation-result .loan-calculation-result-container .additional-loan-information > .loan-profit{
+    color: green;
+    border: none;
+}    
+
+
+
+
+
+            /* start to styling the bottom sheet section  */
+
+
+
+.bottom-sheet{
+    position: fixed;
+    bottom: -100%;
+    z-index: 1000;
+
+    width: 100vw;
+    height: 80vh;
+
+    background-color: rgb(28, 28, 28);
+    transition: bottom .5s ease;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.bottom-sheet.coin{
+    bottom: 0 ;
+    transition: bottom .5s ease;
+}
+
+.bottom-sheet.amount{
+    bottom: 0 ;
+    transition: bottom .5s ease;
+}
+
+.bottom-sheet.month{
+    bottom: 0 ;
+    transition: bottom .5s ease;
+}
+
+.bottom-sheet .titel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: iranSans;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    color: rgb(166, 166, 166);
+    margin-bottom: 40px;
+}
+
+.bottom-sheet .titel .handel-button{
+    width: 23px;
+    height: 3.5px;
+    background-color: rgb(80, 80, 80);
+    border-radius: 10px;
+    margin-top: 7px;
+}
+
+.bottom-sheet .titel span{
+    padding: 10px;
+}
+
+.bottom-sheet .currencies-list-for-select{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    padding: 15px 0px;
+    border-bottom: 1px solid rgb(61, 61, 61);
+    gap: 10px;
+}
+
+.bottom-sheet .currencies-list-for-select:hover{
+    background-color: rgb(107, 107, 107);
+}
+
+.bottom-sheet .currencies-list-for-select img{
+    width: 30px;
+}
+
+.bottom-sheet .currencies-list-for-select span{
+    font-family: iranSans;
+    font-size: 1.5rem;
+    color: rgb(197, 197, 197);
+}
+
+.bottom-sheet .amount-bottom-sheet{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100%;
+}
+
+.bottom-sheet .input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottom-sheet .input input{
+    font-family: iranSans;
+    padding: 7px 13px;
+
+    width: 94vw;
+    height: 37px;
+
+    background-color: rgb(28, 28, 28);
+    color: white;
+
+    border: 1.8px solid rgb(111, 111, 111);
+    border-radius: 8px;
+}
+
+.bottom-sheet .button{
+
+    background-color: rgb(254, 8, 8);
+    color: rgb(239, 239, 239);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 40px;
+    width: 90vw;
+
+    border: none;
+    border-radius: 5px;
+
+    font-family: iranSans;
+    font-size: 1.7rem;
+    font-weight: bold;
+
+    margin-bottom: 20px ;
+}
+
+}

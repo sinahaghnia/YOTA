@@ -18,7 +18,7 @@
         background: linear-gradient(to right, #414345, #232526); 
 
         width: 90vw;
-        height: 180px;
+        height: 185px;
         border-radius: 7px;
         box-shadow: 0px 0px 10px 0px rgba(138, 138, 138, 0.779);
     }
@@ -113,8 +113,12 @@
         color: rgb(209, 209, 209);
     }
 
+    .wallet-page .user-wallet .user-wallet-container .down-side-of-user-wallet{
+
+    }
+
     .wallet-page .user-wallet .user-wallet-container .deposit-and-widthdraw-cards{
-        display: flex;
+        display: grid;
         grid-template-columns: repeat(4 , 1fr);
         color: rgb(225, 225, 225);
         margin: 10% 4%;
