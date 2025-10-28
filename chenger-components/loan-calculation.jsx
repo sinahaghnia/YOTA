@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { motion , AnimatePresence, number } from "framer-motion";
 import { span } from "framer-motion/client";
+import { useFormState } from "react-dom";
 
 
 
@@ -79,6 +80,9 @@ function LoanCalculation(){
     const [isResultShow , setIsResultShow] = useState(false);
 
     const [userAmount , setUserAmount] = useState(0);
+    const [formatedUserAmount , setFormatedUserAmount] = useState();
+
+
     const [LTV , setLTV] = useState(.60);
     const [loanProfit , setLoanProfit] = useState(0);
     const [loanAmount , setLoanAmount] = useState(0);
@@ -268,10 +272,15 @@ function LoanCalculation(){
                     </div>
 
                     <div className="input">
-                        <input type="text" 
+                        <input
+                        type="text" 
+                        pattern="[0-9]*"
                         placeholder="مقدار را وارد کنید..."
-                        inputMode="numbric" 
-                        onChange={(e)=> setUserAmount(e.target.value)}/> 
+                        inputMode="numeric" 
+                        value={formatedUserAmount}
+                        onChange={(e)=> {
+                            setUserAmount(e.target.value);
+                        }}/> 
                     </div>
 
                 </div>
